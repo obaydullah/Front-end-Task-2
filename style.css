@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+body {
+  font-size: 1rem;
+  font-family: "PT Sans", sans-serif;
+  background-color: #f3eded;
+  color: var(--color-black);
+  position: relative;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+input:focus {
+  outline: none;
+}
+.container {
+  max-width: 90%;
+  width: 114rem;
+  margin: 0 auto;
+  height: 100%;
+}
+/* //////////// */
+
+/* ///Menu Area Start */
+.mainmenu-area {
+  background: #2070CC;
+  color: #fff;
+}
+
+.mainmenu-area-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.logo h2 {
+  font-size: 3rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+ul#nav {
+  list-style: none;
+  display: flex;
+  align-items: stretch;
+}
+
+ul#nav li {
+  display: flex;
+  align-items: center;
+  transition: all .3s ease-in;
+  padding: 2rem 0;
+  cursor: pointer;
+}
+ul#nav li:hover{
+  background-color: rebeccapurple;
+}
+
+ul#nav li a {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 2rem;
+}
+button.login {
+  background: #fff;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  font-weight: bold;
+  color: rebeccapurple;
+  cursor: pointer;
+  transition: all .3s;
+}
+button.registration {
+  background: #fff;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  font-weight: bold;
+  color: rebeccapurple;
+  cursor: pointer;
+  transition: all .3s;
+  margin-left: 1.5rem;
+}
+button.login:hover {
+  color: green
+}
+button.registration:hover {
+  color: green
+}
+/* ///Menu Area End */
+
+/* /////////Slider Area Start */
+.slider-area {
+  position: relative;
+}
+.single-slide-item {
+  height: 80vh;
+  color: #fff;
+  background-color: gray;
+}
+.slide-bg-1 {
+  background: red;
+  background-image: url("./img/1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.slide-bg-2 {
+  background: red;
+  background-image: url("./img/2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.slide-bg-3 {
+  background: red;
+  background-image: url("./img/3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.single-slide-content {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.single-slide-content {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.single-slide-content h2 {
+  font-size: 4rem;
+  font-weight: normal;
+}
+
+.single-slide-content p {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+.slider-area.slick-initialized.slick-slider button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: azure;
+  font-size: 3rem;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  top: 50%;
+  left: 5%;
+  transform: translate(-5%, -50%);
+}
+
+button.slick-prev.pull-left.slick-arrow {
+  left: 90%;
+  top: 50%;
+  z-index: 9;
+}
+/* /////////Slider Area End */
+
+/* ///////Footer Area Start */
+.footer-area {
+  padding: 3rem 0;
+}
+
+.footer-area-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social {
+  flex: 2;
+}
+
+.links {
+  flex: 1;
+}
+
+.documentation {
+  flex: 1;
+}
+
+.support {
+  flex: 1;
+}
+
+h4.footer-title {
+  color: var(--color-secondary);
+  font-size: 1.6rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+ul.footer-nav li a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: inline-block;
+  padding: .6rem 0;
+}
+.footer-area {
+  padding: 3rem 0;
+}
+
+.footer-area-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social {
+  flex: 2;
+}
+
+.links {
+  flex: 1;
+}
+
+.documentation {
+  flex: 1;
+}
+
+.support {
+  flex: 1;
+}
+
+h4.footer-title {
+  color: var(--color-secondary);
+  font-size: 1.6rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+ul.footer-nav {
+  list-style: none;
+}
+
+ul.footer-nav li a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: inline-block;
+  padding: .6rem 0;
+  color: #fff;
+}
+
+.social > h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.social-icons i {
+  margin-right: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 1rem 0;
+}
+
+.social-icons {
+  margin: 1rem 0;
+}
+h4.footer-logo {
+  font-size: 3rem;
+}
+.footer-area {
+  background: #000;
+  color: #fff;
+  margin-top: 5rem;
+}
+/* ///////Footer Area End */
